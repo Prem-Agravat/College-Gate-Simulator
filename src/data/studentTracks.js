@@ -1,0 +1,80 @@
+export const studentTracks = [
+  {
+    id: 1,
+    title: "ID Batavo",
+    speaker: "Security Guard",
+    dialogue: "“ID batavo bhai.”",
+    gujarati: "“આઈડી બતાવો ભાઈ.”",
+    audio: "/audio/student/student-01.mp3",
+    image: "/images/rk_gate.jpg",
+    zoomClass: "zoom-wide-approach",
+    voiceText: "ID batavo bhai.",
+    duration: 3,
+    description: "POV: You are walking up to the main gate of RK University, Rajkot. The guard stops you."
+  },
+  {
+    id: 2,
+    title: "ID Kya Che?",
+    speaker: "Student",
+    dialogue: "“Sir, ID to che... Ek minute sir... bag ma j che.”",
+    gujarati: "“સર, આઈડી તો છે... એક મિનિટ સર... બેગમાં જ છે.”",
+    audio: "/audio/student/student-02.mp3",
+    image: "/images/rk_gate.jpg",
+    zoomClass: "zoom-backpack-search",
+    voiceText: "Sir, ID to che... Ek minute sir... bag ma j che.",
+    duration: 5,
+    description: "You frantically search through your backpack. The guard watches you patiently."
+  },
+  {
+    id: 3,
+    title: "Maru J ID Che",
+    speaker: "Student",
+    dialogue: "“Maru j ID che, madam sathe vat kari lyo ICARD mate.”",
+    gujarati: "“મારું જ આઈડી છે, મેડમ સાથે વાત કરી લ્યો આઈકાર્ડ માટે.”",
+    audio: "/audio/student/student-03.mp3",
+    image: "/images/rk_gate.jpg",
+    zoomClass: "zoom-confident-talk",
+    voiceText: "Maru j ID che, madam sathe vat kari lyo ICARD mate.",
+    duration: 6,
+    description: "You try to explain that you forgot your physical card but you are a registered student."
+  },
+  {
+    id: 4,
+    title: "Photo Wali Problem",
+    speaker: "Security Guard",
+    dialogue: "“Bhai, aa photo tamaro nathi lagto.”",
+    gujarati: "“ભાઈ, આ ફોટો તમારો નથી લાગતો.”",
+    audio: "/audio/student/student-04.mp3",
+    image: "/images/rk_gate.jpg",
+    zoomClass: "zoom-guard-examine",
+    voiceText: "Bhai, aa photo tamaro nathi lagto.",
+    duration: 4,
+    description: "The guard takes your card, looks closely at the faded photo, and shakes his head."
+  },
+  {
+    id: 5,
+    title: "ID Ghar Reh Gayi",
+    speaker: "Student",
+    dialogue: "“Sir... aaje ID ghar reh gayu. Ek vaar java do ne, next time pakku lai aavish.”",
+    gujarati: "“સર... આજે આઈડી ઘરે રહી ગયું. એક વાર જવા દો ને, નેક્સ્ટ ટાઈમ પાક્કું લઈ આવીશ.”",
+    audio: "/audio/student/student-05.mp3",
+    image: "/images/rk_gate.jpg",
+    zoomClass: "zoom-awkward-stand",
+    voiceText: "Sir... aaje ID ghar reh gayu. Ek vaar java do ne, next time pakku lai aavish.",
+    duration: 7,
+    description: "You stand awkwardly at the barrier, hoping the guard will make an exception."
+  },
+  {
+    id: 6,
+    title: "Finally Entry",
+    speaker: "Security Guard",
+    dialogue: "“Chalo, jao. Next time ID bhulta nahi.”",
+    gujarati: "“ચલો, જાઓ. નેક્સ્ટ ટાઈમ આઈડી ભૂલતા નહીં.”",
+    audio: "/audio/student/student-06.mp3",
+    image: "/images/rk_gate.jpg",
+    zoomClass: "zoom-entry-granted",
+    voiceText: "Chalo, jao. Next time ID bhulta nahi.",
+    duration: 5,
+    description: "The guard hands back your card, smiles, and opens the black metal gate. You walk in."
+  }
+];
