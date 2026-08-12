@@ -28,6 +28,11 @@ export function useAudioPlayer(currentTrack, autoNext, onTrackEnd) {
     onTrackEndRef.current = onTrackEnd
   }, [onTrackEnd])
 
+  const autoNextRef = useRef(autoNext)
+  useEffect(() => {
+    autoNextRef.current = autoNext
+  }, [autoNext])
+
   // Initialize dialogue audio
   useEffect(() => {
     dialogueAudioRef.current = new Audio()
@@ -49,7 +54,7 @@ export function useAudioPlayer(currentTrack, autoNext, onTrackEnd) {
     const handleEnded = () => {
       setIsPlaying(false)
       setCurrentTime(0)
-      if (autoNext && onTrackEndRef.current) {
+      if (autoNextRef.current && onTrackEndRef.current) {
         onTrackEndRef.current()
       }
     }
@@ -74,7 +79,7 @@ export function useAudioPlayer(currentTrack, autoNext, onTrackEnd) {
       audio.removeEventListener('ended', handleEnded)
       audio.removeEventListener('error', handleError)
     }
-  }, [autoNext])
+  }, [])
 
   // Initialize ambient audio file if available
   useEffect(() => {
@@ -280,7 +285,7 @@ export function useAudioPlayer(currentTrack, autoNext, onTrackEnd) {
         setCurrentTime(0)
         setIsPlaying(false)
         isFallbackPlayingRef.current = false
-        if (autoNext && onTrackEndRef.current) {
+        if (autoNextRef.current && onTrackEndRef.current) {
           onTrackEndRef.current()
         }
       } else {

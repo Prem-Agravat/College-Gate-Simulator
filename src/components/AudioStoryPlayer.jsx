@@ -70,12 +70,7 @@ export default function AudioStoryPlayer({
             </div>
             <span className="time-display font-mono">{formatTime(duration)}</span>
           </div>
-          
-          {audioError && (
-            <div className="audio-unavailable-badge">
-              ⚠️ Synth audio active (place voice MP3 in {track.audio})
-            </div>
-          )}
+
         </div>
 
         {/* Right Section: Controls & Waveform */}
